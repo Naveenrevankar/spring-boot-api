@@ -29,7 +29,7 @@ public class PostController {
         this.postService = postService;
     }
 
-    // create blog post rest api
+    // create blog post rest api example
     @PostMapping
     public ResponseEntity<PostDto> createPost(@Valid @RequestBody PostDto postDto){
         return new ResponseEntity<>(postService.createPost(postDto), HttpStatus.CREATED);
