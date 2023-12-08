@@ -14,6 +14,7 @@ import javax.persistence.*;
 @Table(name = "comments")
 public class Comment {
 
+//  this is the name of the ID of the comment
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
