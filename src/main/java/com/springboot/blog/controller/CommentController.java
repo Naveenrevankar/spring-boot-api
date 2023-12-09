@@ -19,6 +19,7 @@ public class CommentController {
         this.commentService = commentService;
     }
 
+    // create comments test with github
     @PostMapping("/posts/{postId}/comments")
     public ResponseEntity<CommentDto> createComment(@PathVariable(value = "postId") long postId,
                                                     @Valid @RequestBody CommentDto commentDto){
